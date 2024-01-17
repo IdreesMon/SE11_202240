@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="author" content="Idrees" >
+    <meta name="description" content="Week 2 Demo" >
+    
+    <title>W2 | Demo >:D</title>
+
+    <!--in document styling-->
+    <style>
+        /*in here we write css*/
+
+        /*SELECTING ELEMENTS in CSS & JS
+
+            selector {
+                property:value;
+                property:value;
+
+            }
+
+
+            WAYS TO SELECT:
+
+                *by ELEMENT type (all elemens of type are styled)
+                *by ID name (only that element is styled)
+                *by CLASS name (only elements in that class are styled)
+        */
+
+        /*by ELEMENT*/
+        div {
+            /*all div elements will have the below styles*/
+            border:1px solid black; 
+            margin:10px; /*adds space between border & other elements , all 4 sides*/
+            padding:10px; /*ads space between element content & border, all 4 sides*/
+
+        }
+        /*by ID*/
+
+        #header{
+            /*by #id name*/
+            border:3px solid blue;
+        }
+
+        /*by CLASS*/
+        .bg {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color:">
+    <!-- WRAPPER - Wraps around all content-->
+    <div id="wrapper">
+
+        <!--HEADER-->
+
+        <div id="header"class="bg"> 
+            <h1>Week 2 Demo</h1> <!--only 1 h1 per page - SEO -->
+            <h2>Attributes, <i>Links</i>, and Images</h2>
+
+        </div>
+
+        <!--NAV BAR-->
+        <div id="nav">
+                <!-- external links: links outside of our website-->
+                <a href="https://www.meca.edu" target="blank">Visit MECA!</a>
+
+                <br>
+
+                <!--internal links: links to pages inside of our site (relative paths)-->
+                <a href="text.txt">Open my Text File</a>
+
+
+                <br>
+
+                <!--internal JUMP links: jumps to a section based on #id in current page-->
+                <a href="#bio">BIO</a>
+                <a href="#schools">SCHOOLS</a>
+                <a href="#hobbies">hobbies</a>
+
+                
+                <br>
+                
+                <a href="#footer">Bottom of Page!</a>
+
+        </div>
+
+        <!--BIO-->
+        <div id="bio">
+
+            <h2> My Bio - All About ME</h2>
+
+            <p>Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.</p> <!--word-wrap on: alt+z-->
+
+
+        </div>
+        <!--SCHOOLS-->
+
+        <div id="schools">
+
+            <h2>My Schooling</h2>
+
+            <!--ordered list-->
+            <ol>
+                <li>NEIT - MSIT - 2023</li>
+                <li>MECA - BFA, <i>Photography</i> - 2???</li>
+                <li>USM - media studies electives</li>
+            </ol>
+
+
+                <!--IMAGES: require src and alt attributes-->
+
+                <!--ABSOLUTE PATHS: using images from other sites -- BOOOOO! BADDDD! AVOID!-->
+                <img src="https://www.starcarwraps.com/wp-content/uploads/2017/08/DSC08764-e1560961644686.jpg" alt="I like cars that go VROOOOM">
+
+
+                <!--RELATIVE PATHS: using images from current site's root folder-->
+                <img src="images/meca.jpg" alt="Porteous building at sunset" width="500">
+
+
+        </div>
+
+        <!--HOBBIES-->
+
+        <div id="hobbies">
+            <h2>Things I Like to Do</h2>
+
+            <!--unordered list-->
+            <ul>
+                <li>Skating</li>
+                <li>Reading</li>
+                <li>Chilling with the Boyssss</li>
+            </ul>
+            
+            <img src="images/stormsEnd.jpg" alt="Storms end castle" width="500">
+       
+       
+        </div>
+
+
+        <!--FOOTER-->
+        <div id="footer"class="bg" style="text-align:center">
+
+            <a hre="#header">Back to Top!</a>
+            <p>&copy; I MONTEQUIU  | SE111.02</p>
+
+
+            <!--include validation screenshot below-->
+            <img src="images/valid.png" alt="validation screenshot" width="100%">
+
+        </div>
+
+
+
+
+        </div><!--/ #wrapper-->
+</body>
+</html>
