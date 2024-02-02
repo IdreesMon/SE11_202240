@@ -1,55 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name ="author"  content="I Abdurrazzak">
-    <meta name="description" content ="Movie Site">
+  <meta name="author" content="I Abdurrazzak">
+  <meta name="description" content="Movie Site">
 
 
-    
 
-    <title> Movie Site</title>
-    <style>
+
+  <title> Movie Site</title>
+  <style>
+
+#footer {
+            font-size:10px;
+            text-align:center;
+        
+                }
     .button {
-        background-color: #04AA6D; /* Green */
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-      }
-      
-      #link1:hover {
-        background-color: gold; 
-        color: black; 
-        border: 2px solid brown;
+      background-color: #04AA6D;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
 
-      }
-      #link1:visited {
+      .button1 {
         background-color: white; 
         color: black; 
         border: 2px solid brown;
       }
-
-      #link1:active {
-        background-color: white; 
-        color: black; 
-        border: 2px solid brown;
-
-
-      
-
-
       
       .button1:hover {
-        background-color:goldenrod;
+        background-color: goldenrod;
         color: white;
       }
       
@@ -60,7 +52,7 @@
       }
       
       .button2:hover {
-        background-color: green;
+        background-color: #008CBA;
         color: white;
       }
       
@@ -74,49 +66,68 @@
         background-color: #f44336;
         color: white;
       }
-      
 
-      </style>
+    .button2 {
+      background-color: white;
+      color: black;
+      border: 2px solid brown;
+    }
 
-    <!--in document styling-->
-    <style>
-        
-        #header {
-            text-align: center;
-        }
-        
-        #nav {
-            text-align: center;
-        }
+    .button2:hover {
+      background-color: green;
+      color: white;
+    }
 
-    
-        #content {
-            text-align: center;
-        }
+    .button3 {
+      background-color: white;
+      color: black;
+      border: 2px solid brown;
+    }
 
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            height:2000px;
-            background-color:  burlywood;
-            background-image: linear-gradient(to bottom right, burlywood, rgb(72, 72, 71));
-        }
-   
-    </style>
+    .button3:hover {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+
+  <!--in document styling-->
+  <style>
+    #header {
+      text-align: center;
+    }
+
+    #nav {
+      text-align: center;
+    }
+
+
+    #content {
+      text-align: center;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      height: 2000px;
+      background-color: burlywood;
+      background-image: linear-gradient(to bottom right, burlywood, rgb(72, 72, 71));
+    }
+  </style>
 </head>
-<body>  
 
-  
+<body>
 
-   
-    <!--wrapper / container holds all content-->
-    <div id="container">
+
+
+
+  <!--wrapper / container holds all content-->
+  <div id="container">
     <hr>
 
 
-        <!--HEADER-->
+    <!--HEADER-->
     <div id="header">
 
-        <h1><em>Good Will Hunting</em></h1>
+      <h1><em>Good Will Hunting</em></h1>
 
 
     </div><!--/ #header-->
@@ -126,65 +137,77 @@
       <div id="buttons">
 
         <!--internal page links: RELATIVE PATHS-->
-        <a id="link1" class="link" href="review.html">REVIEW</a>
-        <a id="link2"class="link" href="review.html">CAST</a>
-        <a class="link" href="review.html">REVIEW</a>
+          <a class="button button1" href="index.html">HOME</a>
+          <a class="button button2" href="cast.html">CAST</a>
+          <a class="button button3" href="review.html">REVIEW</a>
 
-   
-    </div>
+      </div>
     </div><!--/ #nav-->
     <hr>
     <!--PAGE CONTENT-->
     <div id="content">
 
-        <h2>ABOUT The Movie <em>Good Will Hunting</em> (1997)</h2>
+      <h2>ABOUT The Movie <em>Good Will Hunting</em> (1997)</h2>
 
-        <p><i><em>Good Will Hunting is a film directed by Gus Van Sant, and written by Ben Affleck and Matt Damon. The movie takes place in South Boston, following the trials and development of Will Hunting. A janitor at MIT who happens to secretly be a  mathematical genius, whose talents are later discovered by a professor, Dr. Sean Maguire. Both Will and Maguire grow to develop a profound relationship, based on their own past trauma and self doubts.</em></i></p>
+      <p><i><em>Good Will Hunting is a film directed by Gus Van Sant, and written by Ben Affleck and Matt Damon. The
+            movie takes place in South Boston, following the trials and development of Will Hunting. A janitor at MIT
+            who happens to secretly be a mathematical genius, whose talents are later discovered by a professor, Dr.
+            Sean Maguire. Both Will and Maguire grow to develop a profound relationship, based on their own past trauma
+            and self doubts.</em></i></p>
 
-        
-        <!--relative image of movie poster-->
-        <img src="images/Good-Will-Hunting-One-Sheet-Poster-24-x-36_110b15d9-c29c-4844-9cdb-04b115e3423f.e3d3c0338b9a1a51e19a262fb4670876.webp" alt="the official movie poster of Good Will Hunting (1997)" width="500" title="Just a kid from Southie" style="border:3px solid goldenrod;">
-        <br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hIdsjNGCGz4?si=M8Wr56dN0xAVWMp-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        
+      <!--relative image of movie poster-->
+      <img
+        src="images/Good-Will-Hunting-One-Sheet-Poster-24-x-36_110b15d9-c29c-4844-9cdb-04b115e3423f.e3d3c0338b9a1a51e19a262fb4670876.webp"
+        alt="the official movie poster of Good Will Hunting (1997)" width="500" title="Just a kid from Southie"
+        style="border:3px solid goldenrod;">
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/hIdsjNGCGz4?si=M8Wr56dN0xAVWMp-"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
 
-        
 
-    
-        
 
-     <div class="info">
-            <!--company + movie "credits" go-->
-            
-               <p><b>Company credits:</b> Miramax Films, Be Gentlemen, Lawrence Bender Productions</p>
-               <p><b>Release Date:</b> December 5th, 1997</p>
-               <p><b>Genre:</b> Drama, Romance</p>
-               <p><b>Rating:</b> R</p>
-               <p><b>Running Time:</b> 126 Minutes</p>
 
-            
-  
 
-    </div><!--/ #content-->
+
+
+
+      <div class="info">
+        <!--company + movie "credits" go-->
+
+        <p><b>Company credits:</b> Miramax Films, Be Gentlemen, Lawrence Bender Productions</p>
+        <p><b>Release Date:</b> December 5th, 1997</p>
+        <p><b>Genre:</b> Drama, Romance</p>
+        <p><b>Rating:</b> R</p>
+        <p><b>Running Time:</b> 126 Minutes</p>
+
+
+
+
+      </div><!--/ #content-->
     </div>
     <hr>
     <!--FOOTER-->
     <div id="footer" class="bg" style="text-align:center">
 
       <a href="#header">BACK TO TOP</a>
-  
-      <p>&copy; I MONTEQUIU  | SE111.02</p>
-  
-  
-        <!--IMAGE OF VALIDATION - for EACH page!-->
-    <!--
+
+      <p>&copy; I MONTEQUIU | SE111.02</p>
+
+
+      <!--IMAGE OF VALIDATION - for EACH page!-->
+      <!--
         <img src="images/_" alt="validation of INDEX page style="width:100%">
     -->
+    <br>
+    <img src="images/Screenshot 2024-02-01 at 6.34.50 PM.png" alt="validation of INDEX page style"width="500" title="Validation Screenshot">
     </div><!--/ #footer-->
-    
 
-    </div><!--/ #container-->
-    
+
+  </div><!--/ #container-->
+
 </body>
+
 </html>
