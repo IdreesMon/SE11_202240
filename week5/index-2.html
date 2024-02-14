@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Idrees M. Abdurrazzak">
+
+    <meta name="description" content ="W5D2 in clsss DEMO">
+
+
+     <title>W5 | Tables & Forms</title>
+
+     <style>
+        table, td {
+            border:1px solid black; /*do this to check if everything is coming out right*/
+
+        }
+     </style>
+</head>
+<body>
+    <h1>Basic Form Demo</h1>
+
+    <form> <!--ALWAYS the outermost elemnt of the build, tables go inside-->
+        
+        <!--labels are used to match with input elements-->
+        <!--'for' attribute connects labels with the input values (matching 'name' attrubute value)-->
+
+        <label for="firstName">First Name: </label>
+        <input type="text" name ="firstName" id="firstName">
+
+        <br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName">
+        
+        <br> 
+
+        <label for="age">Age: </label>
+        <input type="text" name="age" id="age">
+
+
+
+    </form>
+
+    <hr>
+
+
+    <h2>Form using a Table</h2>
+
+    <!--text fields for manual entry by user - value becomes what user types into box before submitting-->
+
+    <form>
+        <!--labels are used to match up with input elements-->
+        <!--
+            for attribute connects labels with input
+                MUST MATCH input's name attribute
+        -->
+        <label for="firstName">First Name: </label> 
+        <input type="text" name="firstName" id="firstName">
+
+        <!--form elements are inline, so use <br> so separate them-->
+        <br>
+
+        <label for="lastName">Last Name: </label> 
+        <input type="text" name="lastName" id="lastName">
+
+        <br>
+    
+        <!--
+            required attribute means user MUST fill in that element or form will not submit
+        -->
+
+        <label for="email">Email: </label> 
+        <input type="text" name="email" id="email" required>
+
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT!">
+
+    </form>
+
+    <h2>Form using a Table</h2>
+
+    <!--form comes FIRST!-->
+    <form method="GET" action="confirm.html"> <!--POST is more secure than GET, but it requires a server to send data to-->
+        
+        <table>
+            <!--the thead handles column headers/labels for columns-->
+            <thead>
+
+                <tr> <!--a new row-->
+                    <td><!--left column - questions/labels-->
+                        <h2>Questions</h2>
+                    
+                    </td>
+                    <td><!--right column - anwser/inputs-->
+                        <h2>Answers</h2>
+                
+                    </td>
+
+                </tr>
+
+
+            </thead>
+            <!--<thead> an be used for column headers/labels for columns-->
+
+            <!--<tbody> ALWAYS holds main form fields (all inputs, maybe with exception of the submit button) is REQUIRED inside of the <table>-->
+                <tbody>
+                   
+                    <!--Table ROW; should include one <td> for every possible column, leave blank when no info for that row-->
+
+                    <tr>
+                        <!--first column - LABEL -->
+                        <td><!--first data cell in row (left)-->
+                            <label for="firstName">First Name:</label>
+                        </td>
+
+                        <!--second column - INPUT-  data cell in row (right)-->
+                        <td>
+                            <input type="text" id="fName" name="fName" placeholder="Jane">     
+                            <!--shows up as a GREY TEXT -> addition level of helping the user fill out a form correctly-->
+                        </td>
+
+                    </tr>
+                    <!--Table Row-->
+                    <tr>
+                        
+                        <!--first column - LABEL -->
+                        <td>
+                            <label for="lastName">Last Name:</label>
+                        </td>
+
+                        <!--second column - INPUT -->
+                        <td>
+                            <input type="text" id="lName" name="lName" placeholder="Doe">
+                        </td>
+
+                    </tr>
+                    <!--Table Row-->
+                    <tr> <!--DROPDOWN MENU new row -- works similar to a list element (ol or ul) and has a containing element with options-->
+                        <td><!--left column - questions/labels-->
+
+                            <label for="faveColor">Pick your favorite color:</label>
+                        </td>
+
+                        <!--second columb - INPUT -->
+                        <td> <!--right column - anwsers/inputs-->
+                            <select name="faveColor"><!--you dont use input for a dropdown menu, you use this because now you gotta enter possible option values--> <!--not the proper way to build a dropdown for navigation - you use styling and CSS for that, what we'rew doing below is just for form aesthetic-->
+                                    <option value="r" style="color: red">RED</option>
+                                    <option value="b" style="color: blue">BLUE</option>
+                                    <option value="pu" style="color:purple">PURPLE</option>
+                                    <option value="pi" style="color: pink">PINK</option>
+                                    <option value="g" style="color: green">GREEN</option>
+                                    <option value="i" style="color: indigo">INDIGO</option>
+                            
+
+                            <!--input type tells you all possible options you can have for the user to utilize -> number, dropdown, checkbox, color, etc-->
+                            <!--extra attributes you can add are min and max to ensure user cannot submit the wrong answers - will literally tell them or just not allow them to submit-->
+                           </select>
+                        </td>
+
+                    </tr>
+
+                    <tr> <!--RADIO BUTTONS - multiple choice row -> give you validation errors, we aren't sure why -- when the name values match, and are using a radio type, the user is restricted to only choosing one from the set-->
+
+                        <td><!--left column - questions/labels-->
+                            <label for="study">Program of study:</label> 
+                        </td>
+
+                        <td> <!--right column - anwsers/inputs-->
+                           <input type="radio" name="study" id="study1" value="SE">Software Engineering<br>
+                           <input type="radio" name="study" id="study2" value="WD">Web Development<br>
+                           <input type="radio" name="study" id="study3" value="CS">Cybersecurity<br>
+                           <input type="radio" name="study" id="study4" value="NE">Networking<br>
+
+
+                        </td>
+
+                    </tr>
+
+                    
+
+                </tbody>
+        </table>
+        <!--keep in mind even if one section wont have a response to a specific row you still include it because if not, the table will "fix itself" and substitute that blank space with the next column -> client has no email but yes phone #, so if you delete email box phone # might scoot into that area-->
+        <!--after one answers a form -> ur url changes to include the new query string of answers--> <!--it shows up after the "?" -->
+        <!--%3f = question mark - cant use it on form because it already is assigned a job-->
+    </form>
+</body>
+</html>

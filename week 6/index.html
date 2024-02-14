@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Idrees M Abdurrazzak 202040">
+    <meta name="description" content="Week 6 JS Intro">
+    <title>Week 6 | Pay Calculator JavaScript</title>
+</head>
+<body>
+    <h1>Week 6 | Pay Calculator | JavaScript</h1>
+
+    <script>
+        //initialize variables & assign values
+      
+        alert(`Hey! Welcome to the Gross Pay Calculator!`)
+        var hourlyRate = Number(prompt(`Enter Hourly Rate: `))
+        //hours worked
+        var hours = Number(prompt(`Enter Hours worked: `))
+        var sum = hourlyRate * hours
+       
+        //weeks worked (2)
+        var weeks = Number(prompt(`Enter Weeks worked: `))
+       
+       //tax
+        var tax = 0.2 //20
+
+
+
+        //manipulate data
+        var grossPay = hourlyRate * hours * weeks
+        var taxAmount = grossPay * tax
+        var netPay = grossPay - taxAmount
+
+
+        //display function
+
+        alert(`${hourlyRate} * ${hours} = ${sum}`)
+        console.log(`${sum} = $${hourlyRate} + ${hours}`)
+         
+        alert(`SUM TOTAL: $${sum.toFixed(2)}`)
+
+        console.log(`${grossPay} = hourlyRate * hours * weeks`)
+        alert(`GROSS PAY: $${grossPay.toFixed(2)}`)
+
+     
+        alert(`UNCLE SAM'S Share: $${taxAmount.toFixed(2)}`)
+        alert(`NET PAY: $${netPay}`)
+
+
+
+    
+
+
+    </script>
+    
+</body>
+</html>
