@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Idrees M Abdurrazzak 202040">
     <meta name="description" content="Week 6 JS Intro">
-    <title>Week 6 | Pay Calculator JavaScript</title>
+    <title>Week 6 | Pay Calculator | JavaScript</title>
+    
+
+<style>
+
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      height: 2000px;
+      text-align: center;
+      background-color: rgb(185, 244, 185);
+      background-image: linear-gradient(to bottom right, rgb(135, 222, 168)119, 0), rgb(72, 72, 71));
+    }
+</style>
+
 </head>
 <body>
     <h1>Week 6 | Pay Calculator | JavaScript</h1>
-
     <script>
         //initialize variables & assign values
       
@@ -25,33 +38,21 @@
        //tax
         var tax = 0.2 //20
 
-
-
         //manipulate data
         var grossPay = hourlyRate * hours * weeks
         var taxAmount = grossPay * tax
         var netPay = grossPay - taxAmount
 
-
         //display function
-
-        alert(`${hourlyRate} * ${hours} = ${sum}`)
+       // three console.log()
         console.log(`${sum} = $${hourlyRate} + ${hours}`)
          
-        alert(`SUM TOTAL: $${sum.toFixed(2)}`)
-
-        console.log(`${grossPay} = hourlyRate * hours * weeks`)
-        alert(`GROSS PAY: $${grossPay.toFixed(2)}`)
-
-     
-        alert(`UNCLE SAM'S Share: $${taxAmount.toFixed(2)}`)
-        alert(`NET PAY: $${netPay}`)
-
-
-
-    
-
-
+        
+        console.log(`$${hourlyRate} * ${tax}`)//tax is 20%)
+        
+        //one alert()
+        alert(`PER WEEK: $${sum.toFixed(2)}\nGROSS PAY: $${grossPay.toFixed(2)}\nUNCLE SAM'S Share: $${taxAmount.toFixed(2)}\nNET PAY: $${netPay.toFixed(2)}`)
+        console.log(`$${grossPay} = hourlyRate * hours * weeks`)
     </script>
     
 </body>
