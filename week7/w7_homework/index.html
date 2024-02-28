@@ -115,29 +115,28 @@
 
         */
         var body = document.querySelector(`body`)
-        console.log(body)
-
         var h1 = document.querySelector(`h1`)
-        console.log(h1)
-
         var input = document.querySelector(`input`)
-        console.log(input)
-
         var first = document.getElementById(`first`)
         var last = document.getElementById(`last`)
         var age = document.getElementById(`age`)
-
         var info = document.getElementById(`info`)
+        var rate = document.getElementById(`rate`)
+        var hours = document.getElementById(`hours`)
+        var confirmButton = document.getElementById(`confirm-button`)
+        var enterButton = document.getElementById(`enter-button`)
+        console.log(body, h1, input, first, last, age, info, rate, hours, enterButton)
+
 
 
         //PART2------adding event listeners------------------------
         /*
             add an event listener to the #enter-button that runs a function called "formData"
-
             add an event listener to the #confirm-button that runs a function called "confirmForm"
         */
 
-
+        document.querySelector(`#enter-button`).addEventListener(`click`, formData)
+        document.querySelector(`#confirm-button`).addEventListener(`click`, confirmForm)
         //PART3------building event functions----------------------
         /*
             formData() instructions: 
@@ -162,6 +161,7 @@
                 
 
         */
+    
        function formData(event)
        {
             //EXTRA CREDIT---------+5pts-------------------------------
@@ -172,7 +172,7 @@
        }//formData()
 
 
-       function confirmData(event)
+       function confirmForm(event)
        {
 
        }//confirmData()
