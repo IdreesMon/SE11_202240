@@ -22,7 +22,8 @@
 		{first:"Kevin", last:"McCallister", credit:"Home Alone" },
 		{first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
 		{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
-		{first:"Marion", last:"Cobretti", credit:"Cobra" }
+		{first:"Marion", last:"Cobretti", credit:"Cobra" },
+		{first:"Slater", last:"Leonardo", credit:"Competitive Programmer" },
 	]
 	
 	console.log(people)
@@ -41,6 +42,7 @@
             {
                
                 var tempDiv = document.createElement(`div`)
+				//var copy = tempDiv.cloneNode()
                 tempDiv.setAttribute(`id`, people[i].first)
                 tempDiv.setAttribute(`class`, `border`) //give each div a class border
 
