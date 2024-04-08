@@ -10,33 +10,86 @@
 
 
     <title>MultiBio Page</title>
+    <style>
+
+.button {
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      
+      .button1 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid black;
+      }
+      
+      .button1:hover {
+        background-color: blue;
+        color: white;
+      }
+      
+      .button2 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid black;
+      }
+      
+      .button2:hover {
+        background-color: blue;
+        color: white;
+      }
+      
+      .button3 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid black;
+      }
+      
+      .button3:hover {
+        background-color: blue;
+        color: white;
+      }
+      
+    
+      </style>
+
+    </style>
 
 
     <!--in document-->
     <style>
         /*We write in CSS*/
         div {
-            border: 1px solid black;
+            border: 1px solid grey;
             padding:10px;
             margin:10px;
         }
 
         #wrapper {
-            background-color: rgb(179, 222, 176);
+            background-color:white;
 
         }
 
         .bg {
-            background-color:darkslategrey;
-            color: aliceblue;
+            background-color:white;
+            color: black;
             text-align: center;
         }
         .border {
-                border:2px solid lightskyblue
+                border:2px solid black
         }
 
         #footer {
-           border:3px solid black;
+           border:3px solid grey;
         }
 
 
@@ -69,8 +122,8 @@
                  body {
             font-family: 'Times New Roman', Times, serif;
             height:2000px;
-            background-color: lightseagreen;
-            background-image: linear-gradient(to bottom right, lightseagreen, green);
+            background-color: white;
+            background-image: linear-gradient(to bottom right, white);
         }
             </style>
         
@@ -82,13 +135,9 @@
             <!--Internal links: pages inside of website-->
             <!--RELATIVE PATHS-->
           
-                <a href="">HOME</a>
-                <!-- fragment -->
-
-                <a href="">EDUCATION</a>
-        
-    
-                <a href="">HOBBIES</a>
+            <a href ="bio2.html" class="button button1">HOME</a>
+            <a href="education.html" class="button button2">EDUCATION</a>
+            <a href="hobbies.html" class="button button3">HOBBIES</a>
 
    
             
@@ -101,16 +150,16 @@
 <!------------------------------------------------BIO--------------------------------------------------------------------------->
 <div id="main">
 <hr>
-    <div id="bio" style="border: 3px solid forestgreen; text-align: center;">
+    <div id="bio" style="border: 3px solid grey; text-align: center;">
         
-        <h2>My Bio</h2> 
-        <img src="images/IMG_1091.jpeg" height="200px"  alt="Idrees M. Abdurrazzak">
+        <h2>My Bio</h2> 
+        <img src="images biopage2/images/IMG_1091.jpeg" height="200px"  alt="Idrees M. Abdurrazzak">
 
         <p>My name is Idrees M. Abdurrazzak. I'm from Providence, RI and I am a student at NEIT and I am studying Software Engineering & Web Development. I am a son. I am a brother. I am a genuine friend. I am a student. I am a teacher.  I am a leader.  I am a dreamer. I am a doer. I am a thinker. I am a writer. I am a reader. I am a listener. I am a speaker. I am a creator. I am a destroyer. I am a lover. I am a fighter. I am a doubter, and also a believer. </p>
         <hr>
     </div>
     <!------------------------- EDUCATION ------------------------------------->
-    <div id="ed" class="hide" style="border: 3px solid goldenrod; text-align: center;">
+    <div id="ed" class="hide" style="border: 3px solid white; text-align: center;">
        
 
         <h2>Schooling</h2>
@@ -127,15 +176,15 @@
             <!--IMAGES: require src and alt attributes-->
     
             <!--ABSOLUTE PATHS: using images from other sites -- BOOOOO! BADDDD! AVOID!-->
-            <img src="images/F7Nx7NfWoAEd0pV.jpeg" height=" 200px " width="400" alt="School Picture here">
+            <img src="images biopage2/images/F7Nx7NfWoAEd0pV.jpeg" height=" 200px " width="400" alt="School Picture here">
     
     
             <!--RELATIVE PATHS: using images from current site's root folder-->
-            <img src="images/pcta-2_ac1642387a824b84e52aa5aee412ed83.jpg" alt="Look at this beautiful establishment" height ="200 px" width="400">
+            <img src="images biopage2/images/pcta-2_ac1642387a824b84e52aa5aee412ed83.jpg" alt="Look at this beautiful establishment" height ="200 px" width="400">
     </div>
 
     <!----------------------------- HOBBIES ---------------------------------------->
-    <div id="hobbies" class="hide" style=" border:3px solid goldenrod; text-align: center; "> 
+    <div id="hobbies" class="hide" style=" border:3px solid white; text-align: center; "> 
 
         <h3><i><b>Get to Know About Me:</b></i></h3>
     
@@ -145,8 +194,8 @@
             <p>Chilling with the Boyssss</p>
         </ul>
         
-        <img src="images/header-home.png" alt="Skating here" width="500">
-        <img src="images/78ea7101e6858d291c4afc5b3bb7cd18.png" alt="Reading a book">
+        <img src="images biopage2/images/header-home.png" alt="Skating here" width="500">
+        <img src="images biopage2/images/78ea7101e6858d291c4afc5b3bb7cd18.png" alt="Reading a book">
         
     
     </div>
@@ -165,7 +214,7 @@
         </div><!--/ #nav #End-->
 
 <!--PAGE CONTENT------------------------------------------------------------>
-        <div id="page-content" style="background-color: goldenrod;">
+        <div id="page-content" style="background-color: grey;">
 
             
 

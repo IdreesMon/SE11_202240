@@ -1,0 +1,46 @@
+@charset "UTF-8";
+html{}
+body{}
+main{
+    width:826px;
+    background-color: white;
+    /*begin to make grid */
+    display:grid;
+    grid-template-rows: 73px auto 45px/*73px* is the nav but too small, so it wont appear in Nav. Convert to auto/ auto 45px /* footer is second px value*/ ;
+    
+}
+header{
+    background-color: aliceblue;
+    display:grid;
+    grid-template-columns: auto auto;
+    align-items:first baseline
+}
+h1{
+    margin:13px 0 0 43px;
+    font-family: "Inter", sans-seirf;
+    font-weight:900;
+}
+nav{
+    text-align:right;
+}
+nav a{}
+nav a:link, nav a:visited{}
+nav a:hover{}
+section{
+    display:grid;
+    grid-template-areas: 
+    "fart farts" /*top column is filled with farts*/
+    "img text";
+    margin:20px;
+}
+section h2{
+    grid-area:farts,
+}
+section img{
+    grid-area:img;
+}
+section p{
+    grid-area:text;
+    margin-left:20px;
+}
+footer{}
