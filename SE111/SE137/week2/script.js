@@ -1,9 +1,7 @@
 const links = document.querySelectorAll("div#nav > a");
 const sections = document.querySelectorAll("div#main > div");
 
-// console.log(sections);
-
-links.forEach((link) => {
+links.forEach((link, i) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
 
@@ -11,12 +9,6 @@ links.forEach((link) => {
         section.classList.add("hide");
     })
 
-    // console.log(links);
-
-    // console.log(Array.from(links).indexOf(event.target));
-    // console.log(event.target);
-
-    // console.log(sections[Array.from(links).indexOf(event.target)]);
-    sections[Array.from(links).indexOf(event.target)].classList.remove("hide");
+    sections[i].classList.remove("hide");
   });
 });

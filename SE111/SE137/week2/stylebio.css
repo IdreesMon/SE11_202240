@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+/*This styling applies to all buttons*/
+/*Would these buttons be considered a class?*/
+.button {
+    
+    border: none;
+    color: white;
+    /*Padding style for buttons requirement*/
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    /*Inline-block requirement*/
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  
+}
+    
+  
+  /*Below styling for each individual button*/
+  .button1:link {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    
+  }
+  .button1:visited {
+    color: purple;
+  }
+  .button1:hover {
+    background-color: gold;
+    color: white;
+  }
+  
+  .button2:link {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+  }
+  .button2:visited {
+    color: purple;
+  }
+  
+  .button2:hover {
+    background-color: gold;
+    color: white;
+  }
+  
+  .button3:link {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+  }
+  .button3:visited {
+    color: purple;
+  }
+  
+  .button3:hover {
+    background-color: gold;
+    color: white;
+  }
+
+ /*Borders for surronding Divs (Title,Nav, Bio, Entire border*/
+    div {
+        border: 1px solid black;
+        padding:10px;
+        margin:10px;
+
+
+    }
+
+    #wrapper {
+
+        background-color:white;
+        background-image:linear-gradient(to top left, lightgrey,whitesmoke);
+
+    
+
+    }
+    /*header and footer styling*/
+
+   
+   
+   
+    .bg {
+    
+        /*CSS GENERATOR GRADIENT*/
+        background: rgb(224,223,233);
+        background: linear-gradient(90deg, rgba(224,223,233,1) 15%, gold 100%, rgba(255,255,255,1) 100%);
+        
+        /*was kinda liking mine better*/
+       /* background-image: linear-gradient(to top left, whitesmoke, gold) ;
+        color: black;*/
+        
+        text-align: center;
+            /*FIRST WEB FONT TYPE*/
+            
+                font-family: "Dancing Script";
+                font-optical-sizing: auto;
+                font-weight: 300px;
+                font-style: normal;
+              
+
+        box-shadow: inset 0 0 7px #000000;
+
+        
+            
+    }
+    a:link {
+        color: black;
+    }
+    a:visited {
+        color: purple;
+    }
+    a:hover {
+        color: blue;
+    }
+    /*Title border*/
+    .border {
+            border:2px solid black
+    }
+
+    #footer {
+    font-family: 'Times New Roman', Times, serif;
+       border:2px solid black;
+       text-align: center; 
+    }
+
+
+    #nav {
+        text-align: center;
+        border: solid black 2px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .biotext{
+        /*text-align: center;*/
+    
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    img {
+        border: 2px solid black;
+        margin: 8px o o 20px;
+        padding: 4px;
+        display: block;
+
+        /*TOOK ME A LITTLE TO FIGURE OUT HOW TO CENTER JUST THE IMAGE WITHOUT THE TEXT AND NOT HAVING TO ASSIGN THEM IN DIFFERENT DIVS --- LETS GO*/
+        margin-inline: auto;
+
+    }
+   
+
+    body {
+        /*SECOND FONT TYPE*/
+        font-family:'Times New Roman', Times, serif;
+        height:2000px;
+        background-color: white;
+        background-image: linear-gradient(to bottom right, lightgrey, whitesmoke);           
+        border: 2px solid black;
+    }
+
+
