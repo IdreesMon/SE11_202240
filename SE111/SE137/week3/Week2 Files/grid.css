@@ -1,0 +1,107 @@
+@charset "UT8-8";
+
+header{
+    background-color: #ffd700 ;
+    background-image:linear-gradient(to top left, #ffd700,whitesmoke);
+
+    display:grid;
+    text-align:center;  
+    font-family: "Dancing Script";
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+    grid-template-columns: auto auto;
+    align-items: first baseline;
+}
+
+main{
+    width: 700px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto auto 45px;
+}
+
+h2 {
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;  
+    
+}
+h1{
+    margin: 13px 0 0 43px;
+    text-align: center;
+    font-family: "Dancing Script";
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+    font-weight: 750px;
+}
+
+nav{
+    text-align: right;
+    display: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:link, nav a:visited{
+    color: black;
+}
+
+nav a:hover{
+    color: red;
+}
+
+section{
+    display: grid;
+    grid-template-areas: 
+    "img text";
+    margin: 20px;
+}
+
+section h2{
+    grid-area: farts;
+}
+
+section img{
+    grid-area: img;
+   
+}
+
+section p{
+    grid-area: text;
+    margin-left: 20px;
+}
+
+footer{
+    background-color: yellow;
+    display: grid;
+    grid-template-columns:auto;
+    align-items: first baseline;
+    text-align: center;
+    
+}
+
+footer p{
+    margin: 0 0 0 43px;
+    font-family:'Times New Roman', Times, sans-serif;
+    font-weight: 500;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:link, footer a:visited{
+    color: black;
+}
+
+footer a:hover{
+    color: red;
+}
+
+/* Path: SE111/SE137/week3/Week2%20Files/grid.html */

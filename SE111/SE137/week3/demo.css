@@ -10,7 +10,7 @@ main{
     
 }
 header{
-    background-color: aliceblue;
+    background-color: yellow;
     display:grid;
     grid-template-columns: auto auto;
     align-items:first baseline
