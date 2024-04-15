@@ -1,107 +1,120 @@
 @charset "UT8-8";
 
-header{
-    background-color: #ffd700 ;
-    background-image:linear-gradient(to top left, #ffd700,whitesmoke);
-
-    display:grid;
-    text-align:center;  
-    font-family: "Dancing Script";
-    font-optical-sizing: auto;
-    font-weight: 300px;
-    font-style: normal;
-    grid-template-columns: auto auto;
-    align-items: first baseline;
+header {
+/*background-color: #ffd700;*/
+  background-image: linear-gradient(to top left, #ffd700, whitesmoke);
+  /*text-align: center;*/
+  font-family: "Dancing Script";
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+  align-items: first baseline;
 }
 
-main{
-    width: 700px;
-    background-color: white;
-    display: grid;
-    grid-template-rows: auto auto 45px;
+header h2 {
+    text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1250px;
 }
 
 h2 {
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;  
-    
-}
-h1{
-    margin: 13px 0 0 43px;
-    text-align: center;
-    font-family: "Dancing Script";
-    font-optical-sizing: auto;
-    font-weight: 300px;
-    font-style: normal;
-    font-weight: 750px;
+  font-weight: 400;
+  font-style: normal;
+  /* text-align: center; */
+  
 }
 
-nav{
-    text-align: right;
-    display: none;
+h1 {
+  margin: 13px 0 0 43px;
+  text-align: center;
+  font-family: "Dancing Script";
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+  font-weight: 750px;
+
 }
 
-nav a{
-    text-decoration: none;
-    color: black;
+nav {
+  text-align: right;
+  display: none;
 }
 
-nav a:link, nav a:visited{
-    color: black;
+nav a {
+  text-decoration: none;
+  color: black;
 }
 
-nav a:hover{
-    color: red;
+nav a:link,
+nav a:visited {
+  color: black;
 }
 
-section{
-    display: grid;
-    grid-template-areas: 
-    "img text";
-    margin: 20px;
+nav a:hover {
+  color: red;
 }
 
-section h2{
-    grid-area: farts;
+section {
+  margin: 20px;
 }
 
-section img{
-    grid-area: img;
-   
+section p {
+  margin-left: 20px;
+  border: 20px;
 }
 
-section p{
-    grid-area: text;
-    margin-left: 20px;
+footer {
+  background-color: yellow;
+  align-items: first baseline;
+  text-align: center;
 }
 
-footer{
-    background-color: yellow;
-    display: grid;
-    grid-template-columns:auto;
-    align-items: first baseline;
-    text-align: center;
-    
+footer p {
+  margin: 0 0 0 43px;
+  font-family: "Times New Roman", Times, sans-serif;
+  font-weight: 500;
 }
 
-footer p{
-    margin: 0 0 0 43px;
-    font-family:'Times New Roman', Times, sans-serif;
-    font-weight: 500;
+footer a {
+  text-decoration: none;
+  color: black;
 }
 
-footer a{
-    text-decoration: none;
-    color: black;
+footer a:link,
+footer a:visited {
+  color: black;
 }
 
-footer a:link, footer a:visited{
-    color: black;
+footer a:hover {
+  color: red;
 }
 
-footer a:hover{
-    color: red;
+main {
+  display: grid;
+  grid-template-areas:
+  "top-left top-right"
+  "edu hobbies";
+  grid-gap: 30px;
 }
 
-/* Path: SE111/SE137/week3/Week2%20Files/grid.html */
+.top-left {
+  grid-area: top-left;
+}
+
+.top-right {
+  grid-area: top-right;
+}
+
+.edu {
+  grid-area: edu;
+  border: 2px solid black;
+}
+
+.hobbies {
+  grid-area: hobbies;
+  border: 2px solid black;
+}

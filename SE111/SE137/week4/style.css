@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+html{
+    height:100%;
+}
+body{
+    height:100%;
+    margin:0;
+    background-color: aqua;
+    /*someitmes we want the body to have a flex box*/
+    display: flex;
+}
+main{
+    /*flex allows for the image to auto adjust to fit the properties of your site*/
+    /* display:flex; */
+    background-color: yellow;
+    padding: 20px;
+    height: 50%;
+    /*flex direction can chage many directions - Column,row,reverse*/
+    flex-direction:row; 
+    /*justify content can change the alignment of the items in the flex box. ex: Instead of reverse starting at 6 then 1. Justify content can still reverse the image but start at 1-6*/
+    justify-content:space-between; /*if direction is column this will be vertical*/
+    /*wrap is used if no space is left go to the next line*/
+    /*nowrap*/
+   /* flex-wrap: wrap;*/
+   align-items: center; /*if direction is row this will be horizontal*/
+}
+div{
+    /*min-width is actually 50px*/
+    min-width:50px;
+    height:100px;
+    background-color:red ;
+    border:2px solid black;
+
+}
