@@ -20,12 +20,23 @@ header a {
   color: black;
   margin-left: 1250px;
 }
-
+img h3{
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 400px;
+  height: 100px;
+}
 h2 {
   font-weight: 400;
   font-style: normal;
   /* text-align: center; */
   
+}
+
+.top-left img {
+ padding-top: 20px;
+  
+  border-radius: 50%;
 }
 
 h1 {
@@ -68,7 +79,8 @@ section p {
 }
 
 footer {
-  background-color: yellow;
+  background-image: linear-gradient(to top left, #ffd700, whitesmoke);
+
   align-items: first baseline;
   text-align: center;
 }
@@ -88,6 +100,22 @@ footer a:link,
 footer a:visited {
   color: black;
 }
+.top-right p{
+  
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  border: 2px solid black;
+  background-image:linear-gradient(to top left, #ffd700, whitesmoke);
+}
+.hobbies{
+  background-color: #ffd700;
+  background-image: url("../images/YwJwodcwVh-1.webp");
+  background-size: cover;
+  
+
+}
 
 footer a:hover {
   color: red;
@@ -99,7 +127,9 @@ main {
   "top-left top-right"
   "edu hobbies";
   grid-gap: 30px;
+  background-image: linear-gradient(to top left, #fff19e, whitesmoke, black);
 }
+
 
 .top-left {
   grid-area: top-left;
@@ -110,11 +140,19 @@ main {
 }
 
 .edu {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   grid-area: edu;
   border: 2px solid black;
 }
 
 .hobbies {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   grid-area: hobbies;
   border: 2px solid black;
 }
