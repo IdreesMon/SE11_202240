@@ -23,15 +23,27 @@ body
     /* grid-area: header; */
     
 }
+#anniversary
+{
+    position: absolute;
+    width: 1820px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    bottom: 0;
+    color: red;
+    /* grid-area: header; */
+    
+}
 #banner
 {
    background-image: url("images/295446581_134583732596259_1006784769843229222_n.jpg");
    position: absolute;
     width: 1440px;
-    height: 388px;
+    height: 300px;
     left: 0;
     right: 380px;
-    top: 100px;
+    top: 70px;
     bottom: 592px;
 
     background-size: cover;
