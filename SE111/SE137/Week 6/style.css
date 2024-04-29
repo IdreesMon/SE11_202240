@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+html{}
+body{
+    height:100%;
+    margin:0;
+}
+main{}
+header{
+    background-color: grey;
+}
+section{
+    background-color: lime;
+    height: 100%;
+    display:flex;
+}
+aside{
+    background-color:grey;
+    width:45px;
+}
+.tray{
+    width:144px;
+    background-color:lightgrey;
+    transition: width 1s;
+    color:white;
+    display:flex;
+    justify-content: flex-end;
+    overflow:hidden;
+}
+
+div.tray.div{
+    width:144px;
+    box-sizing: border-box;
+    border: 5px solid cyan;
+}
+#program{
+    background-color:black;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+
+}
+nav{
+    height:34px;
+    display: flex;
+}
+button{
+    width:173px;
+    background-color: black;
+    border-radius: 0;
+    border: 0 solid black;
+    margin-right: 2px;
+}
+button:last-child{
+    margin-right: 0;
+}
+#breadcrumbs{
+    height:23px;
+    background-color:black;
+}
+textarea{
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+    background-color: black;
+    border: 0 solid black;
+    resize: none;
+    color: white;
+    outline:none;
+    overflow-y:auto;
+}
+footer{
+    height:16px;
+    background-color: blue;
+}
+
+.hide{
+    width:0;
+    transition: width 1s;
+}
