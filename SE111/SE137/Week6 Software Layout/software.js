@@ -3,7 +3,7 @@ const tabs = document.querySelectorAll(".tab");
 const activeTab = document.querySelector("#active-tab");
 activeTab.innerHTML = tabs[0].textContent;
 
-document.querySelectorAll(".tab").forEach((tab, i) => {
+document.querySelectorAll(".tab").forEach((tab) => {
     tab.addEventListener("click", () => {
         activeTab.innerHTML = tab.textContent;
     })
