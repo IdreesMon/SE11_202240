@@ -1,0 +1,202 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+p, h1 {
+    font-family: Arial, sans-serif;
+}
+
+body > header {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    padding-left: 60px;
+    padding-right: 25px;
+}
+
+p, h1 {
+    color: white;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+header svg {
+    color: white;
+}
+
+aside {
+    display: flex;
+    width: 60px;
+    min-width: 60px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: grey;
+}
+
+aside > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside > div:first-child {
+    gap: 10px;
+}
+
+aside > div:last-child {
+    padding-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.actions > p {
+    cursor: pointer;
+}
+
+.gear-icon {
+    cursor: pointer;
+}
+
+.file-explorer {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgb(107, 107, 107);
+}
+
+details {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: rgb(107, 107, 107);
+    padding-bottom: 15px;;
+}
+
+details:not(:first-child) {
+    border-top: 2px solid rgb(69, 23, 23);
+}
+
+details[open] > summary {
+    border-bottom: 2px solid rgb(69, 23, 23);
+}
+
+summary {
+    list-style: none;
+    display: flex;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+summary > h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+summary svg {
+    color: white;
+}
+
+.editor {
+    width: 100%;
+}
+
+.tabs {
+    display: flex;
+    gap: 2px;
+    background-color: brown;
+}
+
+.tab {
+    display: flex;
+    width: 200px;
+    background-color: blueviolet;
+    justify-content: space-between;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.tab > div {
+    display: flex;
+    gap: 10px;
+}
+
+.tab svg {
+    color: white;
+    height: 20px;
+    width: 20px;
+}
+
+.tab p {
+    margin: 0;
+    cursor: pointer;
+}
+
+
+.breadcrumbs{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(69, 23, 23);
+
+}
+
+.breadcrumbs > p {
+    margin: 0;
+    color: rgb(111, 111, 225);
+    cursor: pointer;
+}
+
+.breadcrumbs > span {
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: none;
+    resize: none;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    padding: 0 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer svg {
+    color: white;
+}

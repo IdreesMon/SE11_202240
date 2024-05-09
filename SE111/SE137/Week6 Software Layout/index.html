@@ -1,58 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref = "stylesheet" href="software.css">
-    <title>Software Layout</title>
-</head>
-<body>
-    <section>
-        <div class="header"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>software</title>
+  </head>
+  <body>
+    <header>
+      <div class="actions">
         <p>File</p>
-
         <p>Edit</p>
-
         <p>Help</p>
-
-    </section>
-    <nav> 
-        <div class="tab">
-            <p>Tab 1</p>
-                
-        </div>
-        <div class ="tab">
-            <p>Tab 2</p>
-
-        </div>
-
-        <div class="tab">
-            <p>Tab 3</p>
-
-        </div>
-    </nav>
-    </section>
-    <section class="contentspace">
+      </div>
+      <p>Week 6 Assignment</p>
+      <i class="gear-icon" data-feather="settings"></i>
+    </header>
+    <main>
+      <aside>
         <div>
-
-        
+          <button id="toggle-button">
+            <i data-feather="minimize"></i>
+          </button>
+          <button>
+            <i data-feather="square"></i>
+          </button>
         </div>
-    </section>
-    <section>
+        <div>
+          <button>
+            <i data-feather="trash-2"></i>
+          </button>
+        </div>
+      </aside>
+      <div class="file-explorer">
+        <details open>
+          <summary>
+            <i data-feather="arrow-down"></i>
+            <h1>Files</h1>
+          </summary>
+          <ul>
+            <p>File 1</p>
+            <p>File 2</p>
+            <p>File 3</p>
+            <p>File 4</p>
+          </ul>
+        </details>
+        <details open>
+          <summary>
+            <i data-feather="arrow-down"></i>
+            <h1>Others</h1>
+          </summary>
+          <ul>
+            <p>File 1</p>
+            <p>File 2</p>
+          </ul>
+        </details>
+      </div>
+      <div class="editor">
+        <nav class="tabs">
+            <div class="tab">
+                <div>
+                    <i data-feather="send"></i>
+                    <p>Tab 1</p>
+                </div>
+                <i data-feather="x"></i>
+            </div>
+            <div class="tab">
+                <div>
+                    <i data-feather="send"></i>
+                    <p>Tab 2</p>
+                </div>
+                <i data-feather="x"></i>
+            </div>
+            <div class="tab">
+                <div>
+                    <i data-feather="send"></i>
+                    <p>Tab 3</p>
+                </div>
+                <i data-feather="x"></i>
+            </div>
+        </nav>
         <div class="breadcrumbs">
-
+            <p>SE 137</p>
+            <span>></span>
+            <p>W6</p>
+            <span>></span>
+            <p>Homework</p>
+            <span>></span>
+            <p id="active-tab"></p>
         </div>
-    </section>
-
-    <section class="toolbox">
-        <div>
-            
-        </div>
-    </section>
-
-    <section class="sidebar">
-
-    </section>
-  
-</body>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        
+      </div>
+    </main>
+    <footer>
+      <p>;alalal</p>
+      <i data-feather="wifi"></i>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+    <script src="software.js"></script>
+  </body>
 </html>
