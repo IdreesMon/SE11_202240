@@ -58,13 +58,24 @@ aside > div {
 }
 
 aside > div:first-child {
-    gap: 10px;
+   gap: 10px;
 }
 
 aside > div:last-child {
     padding-bottom: 20px;
 }
 
+button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+   
+}
+
+button:hover {
+    color: yellow;
+}
 .actions {
     display: flex;
     justify-content: center;
@@ -79,13 +90,39 @@ aside > div:last-child {
     cursor: pointer;
 }
 
+
 .file-explorer {
     display: flex;
     height: 100%;
     flex-direction: column;
     background-color: rgb(107, 107, 107);
 }
+/* .file-explorer > file {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: rgb(107, 107, 107);
+    padding-bottom: 15px;
 
+} */
+
+summary p {
+    padding: 10px;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sun-icon > summary {
+    list-style: none;
+    display: flex;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
 details {
     display: flex;
     flex-direction: column;
@@ -94,12 +131,13 @@ details {
     padding-bottom: 15px;;
 }
 
+/*file explorer border colors*/
 details:not(:first-child) {
-    border-top: 2px solid rgb(69, 23, 23);
+    border-top: 2px solid grey;
 }
 
 details[open] > summary {
-    border-bottom: 2px solid rgb(69, 23, 23);
+    border-bottom: 2px solid grey;
 }
 
 summary {
@@ -117,7 +155,9 @@ summary > h1 {
 
 summary svg {
     color: white;
+    
 }
+
 
 .editor {
     width: 100%;
@@ -126,13 +166,13 @@ summary svg {
 .tabs {
     display: flex;
     gap: 2px;
-    background-color: brown;
+    background-color: black;
 }
 
 .tab {
     display: flex;
     width: 200px;
-    background-color: blueviolet;
+    background-color: grey;
     justify-content: space-between;
     padding: 10px 5px;
     cursor: pointer;
@@ -143,7 +183,36 @@ summary svg {
     gap: 10px;
 }
 
+.sun-icon{
+    
+    display: flex;
+    flex-direction: column;
+    cursor:pointer;
+    color: white;   
+}
+  
+    
+
+.sun-icon > :first-child {
+    font-size: 16px;
+    gap: 5px;
+    align-items: center;
+   
+}
+.sun-icon > :last-child {
+    font-size: 16px;
+    gap: 5px;
+    align-items: center;
+   
+}
+
+.sun-icon svg {
+    color: white;
+    
+}
+
 .tab svg {
+    
     color: white;
     height: 20px;
     width: 20px;
@@ -159,7 +228,7 @@ summary svg {
     display: flex;
     gap: 10px;
     padding: 10px;
-    background-color: rgb(69, 23, 23);
+    background-color:black;
 
 }
 
@@ -190,13 +259,37 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: blue;
-    padding: 0 25px;
+    padding: 0 25px;   
+    align-items: center;    
 }
 
 footer p {
-    margin: 0;
+    margin: 0;  
 }
 
 footer svg {
     color: white;
+    cursor: pointer;
+    
+}
+
+footer summary{
+    display: flex;
+    align-items: center;
+    height: 15px;
+    
+}
+
+footer svg {
+    height: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 0px;
+
+}
+footer svg:hover {
+    color: yellow;
+}
+.selected {
+    background-color: black;
 }

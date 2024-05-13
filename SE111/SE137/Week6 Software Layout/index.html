@@ -21,7 +21,7 @@
       <aside>
         <div>
           <button id="toggle-button">
-            <i data-feather="minimize"></i>
+            <i data-feather="inbox"></i>
           </button>
           <button>
             <i data-feather="square"></i>
@@ -39,21 +39,42 @@
             <i data-feather="arrow-down"></i>
             <h1>Files</h1>
           </summary>
+
           <ul>
-            <p>File 1</p>
+            <summary>
+              <i data-feather="file"></i>
+              <p>File 1</p>
+           </summary>
+           <summary>
+            <i data-feather="file"></i>
             <p>File 2</p>
-            <p>File 3</p>
-            <p>File 4</p>
+         </summary>
+         <summary>
+          <i data-feather="file"></i>
+          <p>File 3</p>
+       </summary>
+       <summary>
+        <i data-feather="file"></i>
+        <p>File 4</p>
+     </summary>
+           
           </ul>
         </details>
         <details open>
           <summary>
             <i data-feather="arrow-down"></i>
             <h1>Others</h1>
-          </summary>
+          </summary>       
           <ul>
-            <p>File 1</p>
-            <p>File 2</p>
+            <div class = "sun-icon">
+              <summary>
+                <i data-feather="sun"></i>
+                <p>Stuff 1</p>
+              </summary>
+              <summary>
+                <i data-feather="sun"></i>
+                <p>Stuff 2</p>
+              </summary>
           </ul>
         </details>
       </div>
@@ -95,7 +116,10 @@
       </div>
     </main>
     <footer>
-      <p>;alalal</p>
+      <summary>
+        <i data-feather="database"></i>
+        <p>Connect</p>
+      </summary>
       <i data-feather="wifi"></i>
     </footer>
     <script>
