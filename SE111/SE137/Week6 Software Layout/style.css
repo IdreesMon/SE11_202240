@@ -88,6 +88,10 @@ button:hover {
 
 .gear-icon {
     cursor: pointer;
+    
+}
+.gear-icon:hover {
+    color: yellow;
 }
 
 
@@ -96,6 +100,10 @@ button:hover {
     height: 100%;
     flex-direction: column;
     background-color: rgb(107, 107, 107);
+}
+
+.file-explorer svg:hover {
+    color: yellow;
 }
 /* .file-explorer > file {
     display: flex;
@@ -122,6 +130,9 @@ ul {
     padding: 10px 10px;
     cursor: pointer;
     margin-right: 5px;
+}
+.sun-icon svg:hover {
+    color: yellow;
 }
 details {
     display: flex;
@@ -172,7 +183,7 @@ summary svg {
 .tab {
     display: flex;
     width: 200px;
-    background-color: grey;
+    background-color: rgb(107, 107, 107);
     justify-content: space-between;
     padding: 10px 5px;
     cursor: pointer;

@@ -1,0 +1,57 @@
+
+  @media screen and (max-width: 500px) {
+    .stat {
+      display: none;
+    }
+  
+    thead td {
+      font-size: 1.5em;
+    }
+  
+    tr > td {
+      font-size: 1.25em;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  }
+  
+  @media screen and (min-width: 500px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+  
+  thead td {
+    background-color: goldenrod;
+    color: white;
+  }
+  thead td:first-child{
+    border-top-left-radius: 10px;
+
+  }
+  thead td:last-child{
+    border-top-right-radius: 10px;
+  }
+  html,
+  body {
+    margin: 0;
+    height: 100vh;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  table {
+    width: 80%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    border-bottom: 1px solid black;
+  }
+  
