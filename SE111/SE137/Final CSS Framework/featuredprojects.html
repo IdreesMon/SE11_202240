@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="h-dvh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Idrees Abdurrazzak</title>
+</head>
+<body class="flex flex-col">
+    <header id="header" class="flex flex-col md:flex-row justify-between p-5 bg-blue-400">
+        <div class="flex justify-between w-full md:w-fit">
+            <h1 class="text-white font-semibold">Featured Projects<br> <a href="#footer" class="text-sm sm:text-sm fontlight italic text-teal-50 hover:text-amber-200 no-underline"><i>Bottom of Page</i></a></h1>
+            <i class="block md:hidden cursor-pointer text-gray-500 hover:text-amber-200" width="30" height="30" data-feather="menu" id="menu-button"></i>
+        </div>
+    
+        <nav>
+            <div id="links" class="flex flex-col mt-5 md:mt-0 place-items-end md:flex-row gap-5 hidden md:flex">
+                <a class="text-sm sm:text-sm fontlight italic text-teal-50 hover:text-amber-200 no-underline"href="index.html" class="text-white">Home</a> 
+                <a class="text-sm sm:text-sm fontlight italic text-teal-50 hover:text-amber-200 no-underline"href="featuredprojects.html" class="text-white">Featured Project</a>
+                <a class="text-sm sm:text-sm fontlight italic text-teal-50 hover:text-amber-200 no-underline"href="projects.html" class="text-white">SE137 Projects</a>
+               
+            </div>
+        </nav>
+    </header>
+    
+    <section class="m-6">
+        <div class="flex flex-col justify-between gap-5 align-center">
+            <img class="xl:w-[800px] h-auto rounded-lg" src="images/software.png" alt="Featured Project">    
+            <div class="flex flex-col justify-between">
+                <h1 class="text-2xl font-bold">Software Layout</h1>
+                <h2><i>05/27/24</i></h2>
+                <br>
+                <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita non ratione cumque deserunt soluta esse id laboriosam excepturi qui fugiat saepe voluptatem eaque tempore, eum amet, nesciunt, ipsam optio!.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur vel, eos molestias ad placeat, illo inventore odit provident rem nesciunt a ipsa repellat. Praesentium facilis illum earum quasi, deserunt necessitatibus..<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit dolor nihil aliquid sit fuga officiis autem voluptas, sed iusto ullam illum quasi id vel porro quo laborum culpa possimus..</p>
+                
+                <div> 
+            <div class="flex justify-center text-justify">
+                
+            </div>
+        </div>
+        
+        <div class="bg-white p-5 rounded-lg shadow-lg">
+            <div class="bg-blue-400 p-5 rounded-lg text-white text-center">
+                <!--<h1 class="text-2xl font-bold">Featured Projects</h1>-->
+                <a href="https://github.com/IdreesMon/SE11_202240/tree/main/SE111/SE137/Week6%20Software%20Layout"class="text-sm sm:text-lg font-semibold text-gray-500 hover:text-amber-200 no-underline">Project GitHub </a>
+                
+            </div>
+        </div>
+    </div>   
+  
+    <footer id="footer" class="bg-blue-400 p-5 text-white text-center">
+        <p><i>&copy; 2024 Idrees Abdurrazzak</i></p>
+        <a href="https://www.linkedin.com/in/idrees-abdur-razzak-7b0b3b1b4/" class="text-white">Pixso</a>
+        <br>
+        <a href="#header"><i>Back To Top</i></a>
+    </footer>
+    <script>
+        feather.replace()
+    </script>
+    <script>
+        const links = document.getElementById('links');
+
+        document.getElementById('menu-button').addEventListener('click', function() {
+            links.classList.toggle('hidden')
+        });
+    </script>
+</body>
+</body>
+</html>
